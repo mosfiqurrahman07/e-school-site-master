@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/cbcb8f4c06.js" crossorigin="anonymous"></script>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4.5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <title>E-School | Home Page</title>
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- ======= HEADER SECTION START ======= -->
+    <header>
+        <nav id="navbar-ex" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/icon/Logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggle"
+                    aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-toggle">
+                    <ul class="navbar-nav ml-auto text-center nav nav-pills">
+                        <!--nav-pills -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-section">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#online-courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial-section">Others</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog-section">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  e-school-btn-signup" data-toggle="modal" data-target="#signup"
+                                href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link e-school-btn-login " data-toggle="modal" data-target="#login"
+                                href="#">LogIn</a>
+                        </li>
+                    </ul> <!-- nav-->
+                </div>
+            </div> <!-- Container -->
+        </nav> <!-- navbar -->
+    </header>
+
+
+    <!-- SignUp Model -->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content signup">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="modal-footer mt-5">
+                            <a href="#" class="mr-auto">All ready register? SignIn</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" value="SignUp" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Model -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="modal-footer mt-5">
+                            <a href="#" class="mr-auto">Don't Have? Create an new Account</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ======= END HEADER SECTIOIN ======= -->
+
+    <!-- =======  MAIN SECTION START  ======= -->
+    <main data-spy="scroll" data-target="#navbar-ex" data-offset="0">
+
+        <!-- Home Section -->
+        <section id="home-section" class="d-flex justify-center align-items-center">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="home-section-left ">
+                            <p class="learn">Are you ready to Learn?</p>
+                            <h1>Learn With fun on <span style="color: #21B573">any schedule</span>
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eaque commodi nulla
+                                facere non, voluptate nihil voluptates officiis qui ducimus vitae similique possimus
+                                illum? Repudiandae possimus fugit sed asperiores itaque?</p>
+                            <a href="#" class="btn e-school-btn mt-3">Get Started</a>
+                        </div> <!-- home-section-left -->
+                    </div> <!-- col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="home-section-right">
+                            <figure>
+                                <img class="img-fluid" src="img/photos/Illustration.png" alt="">
+                            </figure>
+                        </div> <!-- home-section-right-->
+                    </div> <!-- col-md-6 -->
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section> <!-- Home Section-->
+
+        <!-- Book Group -->
+        <section id="book-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3  mt-sm-3 mt-3 mt-md-3  mt-lg-0">
+                        <div class="book-box">
+                            <figure><img src="img/icon/book.png" alt="book" class="img-fluid"></figure>
+                            <h4>1500+ Topic</h4>
+                            <p>Learn Anythings</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-sm-3 mt-3 mt-md-3  mt-lg-0">
+                        <div class="book-box">
+                            <figure><img src="img/icon/Student.png" alt="book" class="img-fluid"></figure>
+                            <h4>1800+ Students</h4>
+                            <p>Learn Anythings</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-sm-3 mt-3 mt-md-3  mt-lg-0">
+                        <div class="book-box">
+                            <figure><img src="img/icon/Test.png" alt="book" class="img-fluid"></figure>
+                            <h4>9K+ Test Token</h4>
+                            <p>Learn Anythings</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-sm-3 mt-3 mt-md-3 mt-lg-0">
+                        <div class="book-box">
+                            <figure><img src="img/icon/Students.png" alt="book" class="img-fluid"></figure>
+                            <h4>2000+ Student</h4>
+                            <p>Learn Anythings</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- online course -->
+        <section id="online-courses">
+            <div class="container">
+                <h1 class="text-center">Online Courses</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="course p-3 mt-sm-5">
+                            <figure><img class="img-fluid" src="img/photos/Morder pyschology.png" alt=""></figure>
+                            <h4>Modern Psychology</h4>
+                            <p>Designation</p>
+                            <a class="btn e-school-btn-course" href="#">Buy Course</a>
+                            <div class="icon">
+                                <div class="icon-left">
+                                    <img src="img/icon/calendar.png" alt="">
+                                    <span>Start 20 April, 2021</span>
+                                </div>
+                                <div class="icon-right">
+                                    <img src="img/icon/people.png" alt="">
+                                    <span>60 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="course p-3 mt-sm-5">
+                            <figure><img class="img-fluid" src="img/photos/Morder psyc.png" alt=""></figure>
+                            <h4>Modern Psychology</h4>
+                            <p>Designation</p>
+                            <a class="btn e-school-btn-course" href="#">Buy Course</a>
+                            <div class="icon">
+                                <div class="icon-left">
+                                    <img src="img/icon/calendar.png" alt="">
+                                    <span>Start 20 April, 2021</span>
+                                </div>
+                                <div class="icon-right">
+                                    <img src="img/icon/people.png" alt="">
+                                    <span>60 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="course  p-3 mt-sm-5">
+                            <figure><img class="img-fluid" src="img/photos/Morder pychons.png" alt=""></figure>
+                            <h4>Modern Psychology</h4>
+                            <p>Designation</p>
+                            <a class="btn e-school-btn-course" href="#">Buy Course</a>
+                            <div class="icon">
+                                <div class="icon-left">
+                                    <img src="img/icon/calendar.png" alt="">
+                                    <span>Start 20 April, 2021</span>
+                                </div>
+                                <div class="icon-right">
+                                    <img src="img/icon/people.png" alt="">
+                                    <span>60 seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section -->
+        <section id="testimonial-section">
+            <div class="container">
+                <h1 class="text-center mb-5">Testimonial</h1>
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <img src="img/team/team-2.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam suscipit
+                                        adipisci, earum magni ratione facilis eligendi. Qui aspernatur, ex laboriosam
+                                        unde neque magni aliquid laudantium omnis sed! Debitis, eius? Lorem ipsum, dolor
+                                        sit amet consectetur adipisicing elit. Officia illo, aliquam earum placeat
+                                        veritatis totam autem nostrum perferendis fugit ab perspiciatis esse cupiditate
+                                        impedit commodi rem. Nostrum totam iste nobis!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <img src="img/photos/Man.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam suscipit
+                                        adipisci, earum magni ratione facilis eligendi. Qui aspernatur, ex laboriosam
+                                        unde neque magni aliquid laudantium omnis sed! Debitis, eius? Lorem ipsum, dolor
+                                        sit amet consectetur adipisicing elit. Officia illo, aliquam earum placeat
+                                        veritatis totam autem nostrum perferendis fugit ab perspiciatis esse cupiditate
+                                        impedit commodi rem. Nostrum totam iste nobis!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <img src="img/team/team-3.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam suscipit
+                                        adipisci, earum magni ratione facilis eligendi. Qui aspernatur, ex laboriosam
+                                        unde neque magni aliquid laudantium omnis sed! Debitis, eius? Lorem ipsum, dolor
+                                        sit amet consectetur adipisicing elit. Officia illo, aliquam earum placeat
+                                        veritatis totam autem nostrum perferendis fugit ab perspiciatis esse cupiditate
+                                        impedit commodi rem. Nostrum totam iste nobis!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog-section" class="my-5 py-3">
+            <div class="container">
+                <h1 class="text-center mb-5">Blogs</h1>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Developer Life</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Student Life</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Unlimited Ways</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Night Life</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-7.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Another World Perspective</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/blog/blog-8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Job Life</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reprehenderit
+                                    debitis consectetur minima dolore, vitae accusamus ea facilis esse fugit magni
+                                    excepturi possimus molestias voluptate optio error, illum incidunt nemo?
+                                    <p>
+                                        <a href="" class="btn e-school-btn-course">Read Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ======= END MAIN SECTION -->
+    <!-- ===== FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut architecto a quis esse quaerat!
+                        Quia maiores ratione deserunt aperiam commodi eius, sapiente fuga, delectus odio ea at qui,
+                        accusamus rem!</p>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <h4>Course</h4>
+                        <li> <a href="#">Graphic Design</a> </li>
+                        <li> <a href="#">Web Design</a> </li>
+                        <li> <a href="#">Business</a> </li>
+                        <li> <a href="#">Marketing</a></li>
+                        <li> <a href="#">Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <h4>Teams</h4>
+                        <li> <a href="#">Graphic Design</a> </li>
+                        <li> <a href="#">Web Design</a> </li>
+                        <li> <a href="#">Business</a> </li>
+                        <li> <a href="#">Marketing</a></li>
+                        <li> <a href="#">Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <h4>Useful Links</h4>
+                        <li> <a href="#">Graphic Design</a> </li>
+                        <li> <a href="#">Web Design</a> </li>
+                        <li> <a href="#">Business</a> </li>
+                        <li> <a href="#">Marketing</a></li>
+                        <li> <a href="#">Engineering</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="mt-5">
+                <p class="text-center">Copyright © 2020 Sujon Hossain</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ==== END FOOTER SECTION ====== -->
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $('body').scrollspy({
+            target: '#navbar-ex'
+        })
+    </script>
+</body>
+</body>
+
+</html>

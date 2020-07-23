@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================
+     DEFAULT SETUP
+    ==================*/
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #F0FFF0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #212121;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #232323;
+    font-weight: 700;
+}
+
+.e-school-btn {
+    background: #21B573;
+    padding: 12px 28px;
+    border-radius: 33px;
+    color: #fff;
+}
+
+
+/* ==================
+     HEADER SECTION
+    ==================*/
+header {
+    position: relative;
+}
+
+header .navbar {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #21B573;
+    background: var(--bg-color);
+
+}
+
+header .navbar .navbar-brand img {
+    width: 110px;
+}
+
+
+.bi-list {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-link {
+    color: black !important;
+    padding: 4px 0px;
+    margin: 0px 5px;
+    transition: 0.5s linear all;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #21B573 !important;
+    background-color: transparent;
+    border-bottom: 1px solid;
+
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px;
+}
+
+.e-school-btn-signup {
+    background: #21B573;
+    border-radius: 18px !important;
+    color: #fff !important;
+    padding: 4px 11px !important;
+}
+
+.e-school-btn-login {
+    background: #FD511A;
+    border-radius: 18px !important;
+    color: #fff !important;
+    padding: 4px 12px !important;
+}
+
+.e-school-btn-course {
+    background: #21B573;
+    border-radius: 18px !important;
+    color: #fff !important;
+    padding: 6px 12px !important;
+}
+
+.navbar-toggler {
+    padding: .20rem .65rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    margin-right: 6px;
+}
+
+@media (max-width: 575.98px) {
+    
+    .e-school-btn-signup {
+        width: 100px;
+        margin: auto;
+
+    }
+    .e-school-btn-login {
+        width: 100px;
+        margin: auto;
+        margin-top: 8px;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .e-school-btn-signup {
+        width: 120px;
+        margin: auto;
+
+    }
+    .e-school-btn-login {
+        width: 120px;
+        margin: auto;
+        margin-top: 8px;
+    }
+}
+/* ==================
+     HOME SECTION SART
+    ==================*/
+#home-section {
+    height: 580px;
+    background: var(--bg-color);
+}
+
+#home-section .home-section-left .learn {
+    color: #FD511A;
+}
+
+#home-section .home-section-right figure img {
+    animation: up-down 3s ease-in-out infinite alternate;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-section-left h1 {
+        font-size: 25px;
+    }
+
+    .e-school-btn {
+        background: #21B573;
+        padding: 8px 22px;
+        border-radius: 33px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ==================
+    BOOK  SECTION 
+    ==================*/
+
+#book-section {
+    padding: 50px 0px;
+}
+
+#book-section .book-box {
+    background: #F8FFFB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 47px 5px;
+    transition: 0.6s all linear;
+}
+
+#book-section .book-box:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    transform: scale(1.05);
+}
+
+#book-section .book-box img {
+    width: 66px;
+    height: 85px;
+}
+
+.book-box h4 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ==================
+    COURSES SECTION 
+    ==================*/
+
+
+#online-courses .course {
+    max-width: 370px;
+    max-height: 483px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.icon img {
+    width: 20px;
+}
+
+@media (max-width: 575.98px) {
+    #online-courses h1 {
+        font-size: 30px;
+        margin: 15px 0px !important;
+    }
+
+}
+
+/* ==================
+    TESTOMIAL SECTION 
+    ==================*/
+#testimonial-section {
+    padding: 80px 0px;
+    margin-top: 30px;
+    background: #F8FFFB;
+}
+
+.carousel-item img {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.text {
+    font-style: italic;
+}
+
+@media (max-width: 575.98px) {
+
+    .carousel-item img {
+        width: 150px;
+        margin-left: 0px;
+    }
+}
+
+/* ==================
+    BLOGS SECTION 
+    ==================*/
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0rem 1.25rem;
+    padding-top: 10px;
+    background-color: #F8FFFB;
+}
+
+@media (max-width: 575.98px) {
+
+    .card {
+        margin: 10px 0px;
+    }
+}
+
+/* ==================
+    FOOTER SECTION 
+    ==================*/
+footer {
+    background-color: #000;
+    padding: 10px 0px;
+    padding-top: 80px;
+    color: white;
+}
+
+footer ul h4 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none !important;
+}
+
